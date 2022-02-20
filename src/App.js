@@ -19,6 +19,33 @@ function App() {
     title:"React Js",
     description:"  React Js is a good one to study and i am also love to study React Js is a good one to study and i am also love to study React Js is a good one to study and i am also love to study React Js is a good one to study and i am also love to study React Js is a good one to study and i am also love to study React Js is a good one to study and i am also love to study"
   }
+  const arrh=[
+      {
+        id:1,
+        title:"React Js",
+        description:"  React Js is a good one to study and i am also love to study React Js is a good one to study and i am also love to study React Js is a good one to study and i am also love to study React Js is a good one to study and i am also love to study React Js is a good one to study and i am also love to study React Js is a good one to study and i am also love to study"
+      },
+      {
+        id:2,
+        title:"React Js2",
+        description:"  React Js is a good one to study and i am also love to study React Js is a good one to study and i am also love to study React Js is a good one to study and i am also love to study React Js is a good one to study and i am also love to study React Js is a good one to study and i am also love to study React Js is a good one to study and i am also love to study"
+      },
+      {
+        id:3,
+        title:"React Js3",
+        description:"  React Js is a good one to study and i am also love to study React Js is a good one to study and i am also love to study React Js is a good one to study and i am also love to study React Js is a good one to study and i am also love to study React Js is a good one to study and i am also love to study React Js is a good one to study and i am also love to study"
+      }
+  
+    ]
+    const card=arrh.map((item,pos)=>{
+      console.log(item);
+      return(
+        <div className='tested' key={item.id}>
+          <h3>{item.title}</h3>
+          <p>{item.description}</p>
+        </div>
+      )
+    });
   
 
  
@@ -36,7 +63,7 @@ function App() {
       {obj.name}<br/>
       {obj.age}<br/>
       {obj.hobby}<br/>
-      <div className='tested'>
+      {/* <div className='tested'>
         <h3>{obj2.title}</h3>
         <p>{obj2.description}</p>
       </div>
@@ -47,7 +74,8 @@ function App() {
       <div className='tested'>
         <h3>{obj2.title}</h3>
         <p>{obj2.description}</p>
-      </div>
+      </div> */}
+      {card}
       
     
 
