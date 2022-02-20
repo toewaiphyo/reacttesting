@@ -1,5 +1,6 @@
 
 import './App.css';
+import Card from './card';
 
 function App() {
   const firstname="John";
@@ -40,10 +41,7 @@ function App() {
     const card=arrh.map((item,pos)=>{
       console.log(item);
       return(
-        <div className='tested' key={item.id}>
-          <h3>{item.title}</h3>
-          <p>{item.description}</p>
-        </div>
+          <Card key={pos}/>
       )
     });
   
