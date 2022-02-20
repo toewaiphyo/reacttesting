@@ -41,7 +41,7 @@ function App() {
     const card=arrh.map((item,pos)=>{
       console.log(item);
       return(
-          <Card key={pos}/>
+          <Card key={pos} title={item.title} description={item.description} id={item.id}/>
       )
     });
   
