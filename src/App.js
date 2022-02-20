@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 
 function App() {
@@ -19,15 +19,7 @@ function App() {
     title:"React Js",
     description:"  React Js is a good one to study and i am also love to study React Js is a good one to study and i am also love to study React Js is a good one to study and i am also love to study React Js is a good one to study and i am also love to study React Js is a good one to study and i am also love to study React Js is a good one to study and i am also love to study"
   }
-  const design={
-    margin:'16px',
-    borderRadius:'5px',
-    boxShadow:'0 2px 5px #ccc',
-    backgroundColor: '#888888',
-    fontSize:'18px',
-    alignContent:'flex-start',
-    padding:'5px'
-  }
+  
 
  
   return (
@@ -44,20 +36,18 @@ function App() {
       {obj.name}<br/>
       {obj.age}<br/>
       {obj.hobby}<br/>
-      <div style={design}>
+      <div className='tested'>
         <h3>{obj2.title}</h3>
         <p>{obj2.description}</p>
       </div>
-      <div style={design}>
+      <div className='tested'>
         <h3>{obj2.title}</h3>
         <p>{obj2.description}</p>
       </div>
-      <hr></hr>
-      <div style={design}>
+      <div className='tested'>
         <h3>{obj2.title}</h3>
         <p>{obj2.description}</p>
       </div>
-      <hr></hr>
       
     
 
