@@ -1,14 +1,10 @@
-.tested{
+.cards{
     margin:16px;
     border-radius:5px;
     box-shadow:0 2px 5px #ccc;
     background-color: #888888;
     font-size:18px;
-    align-content:space-around;
+    align-content:flex-start;
     padding:5px,
     
-  }
-  .App{
-      text-align: center;
-      display: inline;
   }
